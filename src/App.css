@@ -1,0 +1,299 @@
+body {
+  padding-top: 12vh;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    height: 12vh;
+    width: 100%;
+    top: 0px;
+    background-color: #212529;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.car {
+    height: 90vh;
+}
+
+.one {
+
+    margin-bottom: 15vh;
+}
+
+.one1 {
+    margin-top: 10vh;
+}
+
+
+.Footer {
+    background-color: #111;
+}
+
+.cl {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cl:hover {
+    color: #f0ad4e;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+
+.carousel-caption {
+    top: 50vh;
+    /* left: -20rem; */
+}
+
+.carousel {
+    margin-bottom: 15vh;
+}
+
+.M {
+    margin-bottom: 10vh;
+}
+
+.abt {
+    margin-bottom: 15vh;
+}
+
+.con {
+    margin-top: 10vh;
+}
+
+.wor {
+    margin-bottom: 15vh;
+}
+
+@media (max-width:576px) {
+    .navbar {
+        background-color: #212529;
+    }
+}
+body {
+  padding-top: 80px; /* safer than vh */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #212529 !important;
+  min-height: 80px;
+  width: 100%;
+  z-index: 1050;
+}
+
+/* Fix toggler icon visibility */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Nav links */
+.nav-link {
+  font-size: 15px; font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+/* Mobile fix */
+@media (max-width: 576px) {
+  .navbar {
+    background-color: #212529 ;
+    
+  }
+
+  .navbar-collapse {
+    background-color: #212529;
+    border-radius: 20px;
+    padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #212529 ;
+  }
+
+  .navbar-collapse {
+    background-color: #212529;
+     border-radius: 20px;
+    padding: 1rem;
+  }
+}
+.men{
+  margin-bottom: 20vh;
+}
+/* From Uiverse.io by alexruix */ 
+.loader {
+  width: 80px;
+  height: 50px;
+  position: relative;
+}
+
+.loader-text {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  color: #C8B6FF;
+  animation: text_713 3.5s ease both infinite;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+.load {
+  background-color: #9A79FF;
+  /* border-radius: 50px; */
+  /* display: block; */
+  height: 16px;
+  width: 16px;
+  /* bottom: 0; */
+  position: absolute;
+  /* transform: translateX(64px); */
+  animation: loading_713 3.5s ease both infinite;
+}
+
+.load::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #D1C2FF;
+  border-radius: inherit;
+  animation: loading2_713 3.5s ease both infinite;
+}
+.loader-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes text_713 {
+  0% {
+    letter-spacing: 1px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    letter-spacing: 2px;
+    transform: translateX(26px);
+  }
+
+  80% {
+    letter-spacing: 1px;
+    transform: translateX(32px);
+  }
+
+  90% {
+    letter-spacing: 2px;
+    transform: translateX(0px);
+  }
+
+  100% {
+    letter-spacing: 1px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading_713 {
+  0% {
+    width: 16px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  80% {
+    width: 16px;
+    transform: translateX(64px);
+  }
+
+  90% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  100% {
+    width: 16px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading2_713 {
+  0% {
+    transform: translateX(0px);
+    width: 16px;
+  }
+
+  40% {
+    transform: translateX(0%);
+    width: 80%;
+  }
+
+  80% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  90% {
+    width: 80%;
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    width: 16px;
+  }
+}
+.loader {
+  width: 80px;
+  height: 50px;
+  position: relative;
+}
+
+.loader-text {
+  position: absolute;
+  top: 0;
+  color: #C8B6FF;
+  animation: text_713 3.5s ease infinite;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+.load {
+  background-color: #9A79FF;
+  border-radius: 50px;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  bottom: 0;
+  animation: loading_713 3.5s ease infinite;
+}
+
+.load::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #D1C2FF;
+  border-radius: inherit;
+  animation: loading2_713 3.5s ease infinite;
+}
+
+
