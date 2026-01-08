@@ -296,4 +296,37 @@ body {
   animation: loading2_713 3.5s ease infinite;
 }
 
+.carousel-item {
+  height: 90vh;
+}
+
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;   
+}
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 50vh;
+  }
+}
+.carousel-caption {
+  bottom: 20%;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    bottom: 10%;
+    font-size: 14px;
+  }
+}
+
 
